@@ -132,6 +132,23 @@ img.avatar {
 	border-radius: 50%;
 	margin-left: 30px;
 }
+.port-content {
+	display: -webkit-box;
+  	display: -moz-box;
+ 	display: -ms-flexbox;
+  	display: -webkit-flex;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	list-style: none;
+	padding: 0 30px;
+	align-items: center;
+}
+.port-item {
+	width: 420px;
+	height: auto;
+	margin: 30px;
+}
 @media screen and (max-width: 720px){
 	nav{
 		display: none;
@@ -162,5 +179,13 @@ img.avatar {
 	}
 	nav.opened a {
 		display: block;
+	}
+
+}
+@media screen and (max-width: 1040px) {
+	.port-item {
+		width: 100%;
+		max-width: 600px;
+		margin: 30px auto;
 	}
 }
