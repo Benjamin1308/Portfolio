@@ -68,11 +68,12 @@ a.toggle {
 	float: right;
 	display: none;
 }
-.biography, .portfolio {	
+.biography, .portfolio, .contact {	
 	max-width: 1024px;
 	margin: 0 auto;
 	align-items: center;
 	box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.2);
+	background-color: rgb(238, 238, 238);
 }
 
 .biography {
@@ -115,7 +116,6 @@ hr.star-dark {
 	margin: 30px auto; 
 }
 .portfolio {
-	background-color: rgb(238, 238, 238);
 	padding: 40px 0;
 }
 h2.title {
@@ -148,6 +148,70 @@ img.avatar {
 	width: 420px;
 	height: auto;
 	margin: 30px;
+}
+.contact {
+	padding: 40px 0;
+}
+.contact>div {
+	display: flex;
+	justify-content: space-between;
+}
+.contact>div h2{
+	margin-top: 0;
+	margin-top: 20px;
+}
+.contact-form, .contact>div>div {
+	width: 40%;
+	margin:0 60px;
+}
+.contact>div>div{
+	font-size: 20px;
+}
+.contact>div>div>p{
+	margin-top: 35px;
+	color: #666;
+}
+.form-item {
+	padding-bottom: 10px;
+	border-bottom: 1px solid #bbb;
+	font-style: bold;
+	margin-bottom: 10px;
+}
+.form-item label, .form-item input, .form-item textarea {
+	width: 100%;
+	border: none;
+}
+.form-item label {
+	font-size: 17px;
+	opacity: 0;
+	transition: top .3s;
+	margin-bottom: 0px;
+}
+.form-item input, .form-item textarea {
+	font-size: 30px;
+	background-color: rgb(238, 238, 238);
+}
+.form-item textarea {
+	height: 210px;
+}
+.form-item input:focus, .form-item textarea:focus {
+	outline: none;
+}
+.form-item-filled label {
+	opacity: 1;
+	color: #aaa;
+}
+.form-item-focus label{
+	
+	color: #722872;
+}
+p.note {
+	margin-top: 300px !important;
+}
+button {
+	margin-top: 20px;
+	font-size: 20px;
+	color: #666;
 }
 @media screen and (max-width: 720px){
 	nav{
@@ -187,5 +251,16 @@ img.avatar {
 		width: 100%;
 		max-width: 600px;
 		margin: 30px auto;
+	}
+	.contact-form, .contact>div>div {
+		width: 80%;
+		margin:0 auto;
+	}
+	.contact>div {
+		justify-content: center;
+		flex-direction: column;
+	}
+	p.note {
+		margin-top: 60px !important;
 	}
 }
