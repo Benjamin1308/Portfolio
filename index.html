@@ -6,6 +6,9 @@
 	<title>An Amatuer's Portfolio</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<link rel=stylesheet href="css/style.css">
+	<link 
+  href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" 
+  rel="stylesheet"  type='text/css'>
 </head>
 <body>
 	<header>
@@ -14,14 +17,14 @@
 			<a href="#" class="toggle"></a>
 			<nav class="nav-bar">
 				<ul>
-				    <li><a href="#about" id="active">ABOUT</a></li>
-				    <li><a href="#portfolio">PORTFOLIO</a></li>
-				    <li><a href="#contact">CONTACT</a></li>
+				    <li><a href="#about" class="nav-item" id="active">ABOUT</a></li>
+				    <li><a href="#portfolio" class="nav-item">PORTFOLIO</a></li>
+				    <li><a href="#contact" class="nav-item">CONTACT</a></li>
 				</ul>
 			</nav>
 		</div>
 	</header>
-	<section class="biography">
+	<section class="biography" id="about">
 		<div class="intro">
 			<p class="intro-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore laborum.</p>
 			<hr class="star-bright">
@@ -29,7 +32,7 @@
 		</div>
 		<img class="avatar" src="DSC02368.jpg" alt="Avatar">
 	</section>
-	<section class="portfolio">
+	<section class="portfolio" id="portfolio">
 		<h2 class="title">PORTFOLIO</h2>
 		<hr class="star-dark">
 		<ul class="port-content">
@@ -39,6 +42,55 @@
 		    <li><img class="port-item" src="portfolio.png" alt="Web"></li>
 		</ul>
 	</section>
+	<section class="contact" id="contact">
+		<h2 class="title">CONTACT</h2>
+		<hr class="star-dark">
+		<div>
+			<form action="" class="contact-form">
+				<div class="form-item">
+					<label for="name">Name</label>
+					<input type="text" id="name" placeholder="Name" class="input-item">
+				</div>
+				<div class="form-item">
+					<label for="Email">Email</label>
+					<input type="text" id="Email" placeholder="Email" class="input-item">
+				</div>
+				<div class="form-item">
+					<label for="phone">Phone Number</label>
+					<input type="tel" id="phone" placeholder="Phone Number" class="input-item">
+				</div>
+				<div class="form-item">
+					<label for="name">Message</label>
+					<textarea type="text" id="name" placeholder="Message" class="input-item"></textarea>
+				</div>
+				<button class="send">Send</button>
+			</form>
+			<div>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore laborum.</p>
+				<p class="note">Note: No spam/soliciting pour moi, merci :)</p>
+			</div>
+		</div>
+	</section>
+	<footer>
+		<div class="footer-above">
+		    <div>
+		      <h3>About this page</h3>
+		      <p>Made with <i class="fa fa-fw fa-coffee"></i> and <i class="fa fa-fw fa-music"></i><br/>by Me.</p>
+		    </div>
+    		<div>
+      			<h3>Around the Web</h3>
+				<ul>
+				<li><a class="button social" href="https://www.linkedin.com/in/hallaathrad"><i class="fa fa-fw fa-linkedin"></i></a></li>
+				<li><a class="button social" href="https://github.com/hallaathrad"><i class="fa fa-fw fa-github"></i></a></li>
+				<li><a class="button social" href="https://twitter.com/hallaathrad"><i class="fa fa-fw fa-twitter"></i></a></li>
+				<li><a class="button social" href="https://www.flickr.com/photos/hallaathrad/" title="My Flickr"><i class="fa fa-fw fa-flickr"></i></a></li>
+				</ul>
+    		</div>
+  		</div>
+  		<div class="footer-below">qlip © 
+    		<script>document.write(new Date().getFullYear())</script>. All Rights Reversed
+  		</div>
+	</footer>
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 	<script src="js/script.js"></script>
