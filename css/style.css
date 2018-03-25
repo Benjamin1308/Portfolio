@@ -41,7 +41,7 @@ header {
 	padding: 10px 20px;
 	letter-spacing: 2px;
 }
-.nav-bar li a:focus{
+.nav-bar li a.active{
 	color: #555;
 	background-color: #e7e7e7;
 }
@@ -183,7 +183,7 @@ img.avatar {
 .form-item label {
 	font-size: 17px;
 	opacity: 0;
-	transition: top .3s;
+	transition: opacity 1s ease-in-out;
 	margin-bottom: 0px;
 }
 .form-item input, .form-item textarea {
