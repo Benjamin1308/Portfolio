@@ -1,3 +1,3 @@
 # Portfolio
 A studying project for free code camp course.
-Responsive portfolio page using pure css and fontawesome
+Responsive portfolio page using pure css
