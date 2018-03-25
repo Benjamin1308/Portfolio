@@ -1,5 +1,7 @@
 $(document).ready(function(){
-  $("#active").focus();
+  $(".nav-item").on('focus', function(){
+  		$(this).focus();
+  });
   $('.toggle').on('click', function(){
 		$(this).toggleClass('active');
 		$('.nav-bar').toggleClass('opened');
@@ -13,5 +15,6 @@ $(document).ready(function(){
  $("body").on('input propertychange', '.form-item', function(e) {
   		$(this).toggleClass("form-item-filled",!! $(e.target).val());;
   });
-
+ $('body').scrollspy({target: '.nav-bar'})
+ 
 });
